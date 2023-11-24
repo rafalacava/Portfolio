@@ -1,0 +1,125 @@
+:root { /* inicialização de variáveis para ficar mais fácil modificar ao longo do tempo */
+    --purple: #3F0071;
+    --dark-purple: #150050;
+    --black: #000000;
+    --pink: #FB2576;
+    --white: #f6f6f6;
+}
+
+* {
+    color: var(--pink);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    background-image: linear-gradient(to right, var(--black) 5%, var(--purple), var(--black));
+}
+
+#titulo {
+    padding: 2%;
+    font-size: 48px;
+}
+
+.menu {
+    display: flex;
+    margin: 0 20px 0 20px;
+    gap: 10px;
+}
+
+.item-menu {
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--white);
+}
+
+.item-menu:hover {
+    background-color: var(--pink);
+    border-radius: 10%;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.introducao {
+    background: url("/assets/wallpaper.jpg");
+    background-size: 100%;
+    height: 500px;
+    -webkit-mask-image: linear-gradient( to bottom, var(--dark-purple) 1%, transparent);
+}
+
+.inicio-filmes {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15% 30px 15%;
+    gap: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.see-more {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.see-more:hover {
+    transition: 0.5s;
+    background-color: var(--pink);
+    color: var(--black);
+    padding: 5px;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+.subtitulos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filmes {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.poster {
+    width: 200px;
+    height: 300px;
+    box-shadow: 10px 10px 15px var(--black);
+    transition: 0.5s;
+    padding: 20px;
+    background-color: var(--dark-purple);
+    box-sizing: border-box;
+}
+
+.poster:hover {
+    transition: 0.5s;
+    padding: 0;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+footer {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    .introducao {
+        max-height: 400px;
+    }
+}
