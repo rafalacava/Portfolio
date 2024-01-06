@@ -4,20 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixar</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="titulo"><strong>RavenaFlix</strong></h1> <!--título de maior hierarquia com o elemento para chamar atenção em negrito-->
+        <img id="titulo" src="./assets/Ravenaflix (1).png">
         <nav class="menu"> <!--tag que define um menu de navegação-->
-            <a class="item-menu" href="">Search</a>
-            <a class="item-menu" href="index.html">Home</a> <!--define um link para outra página-->
-            <a class="item-menu" href="profile.html">Profile</a>
+            <input type="checkbox" id="search">
+            <label for="search">
+                <h2 class="item-menu">Search</h2>
+            </label>
+            <input type="search" id="search-input" placeholder="Type here">
+            <input type="checkbox" id="home">
+            <label for="home">
+                <a href="./index.html" class="item-menu">Home</a>
+            </label>
+            <input type="checkbox" id="profile">
+            <label for="profile">
+                <h2 class="item-menu">Profile</h2>
+            </label>
+            <ul class="profile-lista">
+                <li class="profile-lista-item">
+                    <a href="./profile.html" class="profile-lista-link">My account</a>
+                </li>
+                <li class="profile-lista-item">
+                    <a href="#" class="profile-lista-link">Favorites</a>
+                </li>
+                <li class="profile-lista-item">
+                    <a href="#" class="profile-lista-link">Seen</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
+    <main>
+        <section class="introducao"></section>
+        
+        <section class="inicio-filmes">
+            <div class="filmes">
+                <div class="subtitulos">
+                    <h2>Pixar</h2>
+                    <a class="see-more" href="pixar.html">See more</a>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="poster" src="./pixar-assets/divertidamente.jpg" alt="Divertidamente"></div>
+                        <div class="swiper-slide"><img class="poster" src="./pixar-assets/monstros_sa.jpg" alt="Monstros SA"></div>
+                        <div class="swiper-slide"><img class="poster" src="./pixar-assets/ratatouille.jpg" alt="Ratatouille"></div>
+                        <div class="swiper-slide"><img class="poster" src="./pixar-assets/toy_story.jpg" alt="Toy Story"></div>
+                        <div class="swiper-slide"><img class="poster" src="./pixar-assets/walle.jpg" alt="Wall-E"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+            
+    </main>
+
     <footer>
-        <p>Feito por <strong>R. L. Lacava</strong></p>
+        <p>Developed by <strong>R. L. Lacava</strong></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 0,
+            slidesPerView: 5,
+        });
+    </script>
+
 </body>
 </html>
