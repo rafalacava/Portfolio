@@ -1,18 +1,22 @@
-.inicio-filmes {
+/* CONTAINER TOTAL */
+
+.carroussel-movies {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    padding: 2% 15%;
+    padding: 4% 16%;
 }
 
-.filmes {
+/* CONTAINER LINHA FILMES */
+
+.movies {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
-.subtitulos {
+.subtitles {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,6 +25,7 @@
 .see-more {
     color: var(--white);
     text-decoration: none;
+    padding: 8px;
     transition: 0.5s;
 }
 
@@ -28,34 +33,133 @@
     transition: 0.5s;
     background-color: var(--pink);
     color: var(--black);
-    padding: 5px;
+    padding: 8px;
     border-radius: 10%;
     font-weight: bold;
 }
 
+/* ITENS CARROSSEL */
+
 .swiper {
     display: flex;
-    text-align: center;
     width: 100%;
+    gap: 6%;
+    overflow: auto;
 }
 
-.swiper-wrapper {
+.swiper::-webkit-scrollbar {
+    background-color: var(--soft-pink);
+    border-radius: 10px;
+}
+
+.swiper::-webkit-scrollbar-button {
+    background-color: var(--dark-pink);
+}
+
+.swiper::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+    border-radius: 50px;
+}
+
+.movie-input {
     display: flex;
+    flex-direction: column;
 }
 
 .poster {
-    width: 200px;
+    width: 210px;
     height: 300px;
-    box-shadow: 10px 10px 15px var(--black);
+    box-shadow: 8px 8px 16px var(--black);
     transition: 0.5s;
-    padding: 20px;
+    padding: 16px;
     background-color: var(--dark-purple);
     box-sizing: border-box;
+    flex-grow: 1;
+    margin-bottom: 8%;
 }
 
 .poster:hover {
     transition: 0.5s;
     padding: 0;
     max-width: 300px;
-    max-height: 400px;
+    max-height: 390px;
 }
+
+#movie_selected {
+    display: none;
+}
+
+.movie_selected_section {
+    display: none;
+    position: absolute;
+    background-color: var(--black);
+}
+
+.wallpaper {
+    height: 400px;
+}
+
+.movie_info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-top: 4%;
+    gap: 8%;
+}
+
+.movie_description {
+    color: var(--white);
+    width: 24vw;
+}
+
+
+
+
+
+
+
+/* TABLET 
+
+@media screen and (max-width: 1024px) {
+
+    .inicio-filmes {
+        padding: 0 8%;
+    }
+    #profile:checked ~ .profile-lista {
+        margin-left: 200px;
+    }
+
+    .profile-lista-item {
+        padding: 8px;
+    }
+    .poster {
+        height: 200px;
+        width: 140px;
+        padding: 8px;
+    }
+
+}
+
+SMARTPHONES
+
+@media screen and (max-width: 392px) {
+
+    .inicio-filmes {
+        padding: 0 4%;
+        gap: 10px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .see-more {
+        font-size: 12px;
+    }
+    .poster {
+        height: 100px;
+        width: 70px;
+        padding: 4px;
+    }
+    
+} 
+
+*/
