@@ -3,7 +3,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: auto;
 }
 
 #titulo {
@@ -47,7 +50,7 @@ header {
 
 #search:checked ~ #search-input {
     display: block;
-    position: right;
+    position: bottom;
 }
 
 #home {

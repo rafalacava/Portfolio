@@ -10,7 +10,7 @@
     --black: #000000;
     --pink: #FB2576;
     --white: #f6f6f6;
-    --soft-pink: #E95793;
+    --soft-pink: #e9579446;
     --dark-pink: #720455;
 }
 
@@ -27,9 +27,9 @@ main {
 }
 
 .introducao {
-    background: url("/assets/wallpaper.jpg");
-    background-size: 100%;
-    height: 40vh;
+    padding: 5% 0 0 0;
+    height: 50vh;
+    overflow: hidden;
     -webkit-mask-image: linear-gradient( to bottom, var(--purple) 1%, transparent);
 }
 
