@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("./styles/header.css");
+@import url("./styles/footer.css");
+@import url("./styles/carrossel.css");
+@import url("./styles/profile.css");
+
+:root { /* inicialização de variáveis para ficar mais fácil modificar ao longo do tempo */
+    --purple: #3C0753;
+    --dark-purple: #030637;
+    --black: #000000;
+    --pink: #FB2576;
+    --white: #f6f6f6;
+    --soft-pink: #e9579446;
+    --dark-pink: #720455;
+}
+
+* {
+    color: var(--pink);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: linear-gradient(to right, var(--black) 5%, var(--purple), var(--black));
+    size: 100%;
+}
+
+.introducao {
+    padding: 5% 0 0 0;
+    height: 50vh;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient( to bottom, var(--purple) 1%, transparent);
+}
+
+@media (max-width: 1024px) {
+    .introducao {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 390px) {
+    .introducao {
+        max-height: 150px;
+    }
+}

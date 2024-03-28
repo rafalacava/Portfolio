@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="titulo" src="./assets/Ravenaflix (1).png">
+        <nav class="menu">
+            <input type="checkbox" id="search">
+            <label for="search">
+                <h2 class="item-menu">Search</h2>
+            </label>
+            <input type="search" id="search-input" placeholder="Type here">
+            <input type="checkbox" id="home">
+            <label for="home">
+                <a href="./index.html" class="item-menu">Home</a>
+            </label>
+            <input type="checkbox" id="profile">
+            <label for="profile">
+                <h2 class="item-menu">Profile</h2>
+            </label>
+            <ul class="profile-lista">
+                <li class="profile-lista-item">
+                    <a href="./profile.html" class="profile-lista-link">My account</a>
+                </li>
+                <li class="profile-lista-item">
+                    <a href="#" class="profile-lista-link">Favorites</a>
+                </li>
+                <li class="profile-lista-item">
+                    <a href="#" class="profile-lista-link">Seen</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introducao"></section>
+        
+        <section class="inicio-filmes">
+            <div class="filmes">
+                <div class="subtitulos">
+                    <h2>Disney</h2>
+                    <a class="see-more" href="disney.html">See more</a>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="poster" src="./disney-assets/branca_de_neve.webp" alt="A Branca de Neve">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="poster" src="./disney-assets/cinderella.jpg" alt="Cinderella">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="poster" src="./disney-assets/detona_ralph.jpg" alt="Detona Ralph">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="poster" src="./disney-assets/enrolados.webp" alt="Enrolados">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="poster" src="./disney-assets/princesa_sapo.webp" alt="A Princesa e o Sapo">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>  
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Developed by <strong>R. L. Lacava</strong></p>
+    </footer>
+
+</body>
+</html>
