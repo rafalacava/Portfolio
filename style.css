@@ -3,6 +3,7 @@
 @import url("./styles/footer.css");
 @import url("./styles/carrossel.css");
 @import url("./styles/profile.css");
+@import url("./styles/favorites.css");
 
 :root { /* inicialização de variáveis para ficar mais fácil modificar ao longo do tempo */
     --purple: #3C0753;
