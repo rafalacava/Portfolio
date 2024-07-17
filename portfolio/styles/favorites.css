@@ -1,0 +1,11 @@
+.main-favorites {
+    padding-top: 8%;
+}
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 2% 16%;
+}

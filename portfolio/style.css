@@ -3,6 +3,7 @@
 @import url("./styles/footer.css");
 @import url("./styles/carrossel.css");
 @import url("./styles/profile.css");
+@import url("./styles/favorites.css");
 
 :root { /* inicialização de variáveis para ficar mais fácil modificar ao longo do tempo */
     --purple: #3C0753;
@@ -33,14 +34,19 @@ main {
     -webkit-mask-image: linear-gradient( to bottom, var(--purple) 1%, transparent);
 }
 
+.wallpaper-intro {
+    width: 100%;
+    padding-top: 10px;
+}
+
 @media (max-width: 1024px) {
     .introducao {
-        max-height: 300px;
+        max-height: 36vh;
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
     .introducao {
-        max-height: 150px;
+        max-height: 28vh;
     }
 }
