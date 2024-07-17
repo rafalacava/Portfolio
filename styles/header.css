@@ -28,7 +28,7 @@ header {
 }
 
 .header-icon {
-    height: 24px;
+    height: 20px;
 }
 
 #search {
@@ -82,7 +82,6 @@ header {
     background-color: var(--black);
     list-style: none;
     align-items: end;
-
 }
 
 #profile:checked ~ .profile-lista {
@@ -128,10 +127,15 @@ header {
 
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 768px) {
 
     #titulo {
         height: 24px;
+    }
+
+    .menu {
+        gap: 32px;
+        padding-right: 4%;
     }
 
     .item-menu {
@@ -140,6 +144,11 @@ header {
 
     .header-icon {
         height: 20px;
+    }
+
+    #profile:checked ~ .profile-lista {
+        padding: 16px;
+        gap: 8px;
     }
     
 }
